@@ -59,4 +59,16 @@ centos.repo
 
 # Accounts
 
+```
 
+cat /etc/passwd
+
+yaoming:x:2200:501::/home/yaoming:/bin/bash
+jetli:x:2300:502::/home/jetli:/bin/bash
+
+cat /etc/group
+
+shanghai:x:501:
+beijing:x:502:
+
+```
