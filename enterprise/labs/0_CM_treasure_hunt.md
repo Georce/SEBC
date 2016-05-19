@@ -8,6 +8,10 @@ Administration > Security > CATEGORY > Kerberos > Kerberos Security Realm
 
 # Which CDH service(s) host a property for enabling Kerberos authentication?
 
+Administration > Security > Status
+
+# How do you upgrade the CM agents?
+
 Hosts > Re-run Upgrade Wizard
 
 # Give the tsquery statement used to chart Hue's CPU utilization?
