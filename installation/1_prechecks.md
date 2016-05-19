@@ -1,17 +1,26 @@
-```bash
+### 1. swap
 
-1. swap
+```bash
 
 # sysctl -a | grep vm.swap
 vm.swappiness = 1
 
-2. mount option
+```
+
+### 2. mount option
+
+```bash
 
 # mount
 /dev/vda1 on / type ext4 (rw)
 /dev/vdb on /data/disk1 type xfs (rw,noatime,nodiratime,nobarrier,inode64)
 
-3. disk space
+```
+
+
+### 3. disk space
+
+```bash
 
 # df -h
 Filesystem      Size  Used Avail Use% Mounted on
@@ -19,13 +28,22 @@ Filesystem      Size  Used Avail Use% Mounted on
 tmpfs           7.8G     0  7.8G   0% /dev/shm
 /dev/vdb        100G   33M  100G   1% /data/disk1
 
-4. limit
+```
+
+
+### 4. limit
+
+```bash
 
 cat /etc/security/limits.conf 
 *   soft    nofile 1048576
 *   hard    nofile 1048576
 
-5. lookups
+```
+
+### 5. lookups
+
+```bash
 
 [root@cdh01 ~]# ping cdh01
 PING cdh01.cs1hypers.com (10.100.196.31) 56(84) bytes of data.
@@ -57,7 +75,11 @@ PING cdh04.cs1hypers.com (10.100.196.33) 56(84) bytes of data.
 1 packets transmitted, 1 received, 0% packet loss, time 780ms
 rtt min/avg/max/mdev = 0.907/0.907/0.907/0.000 ms
 
-6. nscd
+```
+
+### 6. nscd
+
+```bash
 
 yum install ncsd
 
@@ -65,7 +87,11 @@ echo 'enable-cache hosts yes' >> /etc/nscd.conf
 
 service ncsd start
 
-7. ntpd
+```
+
+### 7. ntpd
+
+```bash
 
 yum install ntpd
 
