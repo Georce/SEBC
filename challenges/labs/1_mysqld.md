@@ -30,6 +30,8 @@ mysql-connector-java-5.1.29-1.noarch
 
 # Databases
 
+```bash
+
 mysql> show databases;
 +--------------------+
 | Database           |
@@ -45,6 +47,11 @@ mysql> show databases;
 +--------------------+
 8 rows in set (0.00 sec)
 
+```
+
+```bash
+
 mysql --version
 mysql  Ver 14.14 Distrib 5.6.30, for Linux (x86_64) using  EditLine wrapper
 
+```
